@@ -1,0 +1,292 @@
+2021-08-09 17:58:22 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [14] unable to open database file in D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('sqlite:../../.....', '', '', NULL)
+#1 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare(true)
+#6 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\sqlite\Schema.php(134): yii\db\Command->queryAll()
+#8 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\sqlite\Schema.php(117): yii\db\sqlite\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Schema.php(146): yii\db\sqlite\Schema->loadTableSchema('migration')
+#10 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('up', Array)
+#17 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('up', Array)
+#18 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate/up', Array)
+#19 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate/up', Array)
+#20 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\yii.php(36): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [14] unable to open database file in D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare(true)
+#4 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\sqlite\Schema.php(134): yii\db\Command->queryAll()
+#6 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\sqlite\Schema.php(117): yii\db\sqlite\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Schema.php(146): yii\db\sqlite\Schema->loadTableSchema('migration')
+#8 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('up', Array)
+#15 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('up', Array)
+#16 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate/up', Array)
+#17 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate/up', Array)
+#18 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\yii.php(36): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2021-08-09 17:58:22 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '159x32766 (159x38)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ABoy\\AppData\\Roaming'
+    'asl_log' => 'Destination=file'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HOMEPC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x0003037E'
+    'ConEmuBaseDir' => 'D:\\ishchi\\ilovalar\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'D:\\ishchi\\Ilovalar\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210422'
+    'ConEmuCfgDir' => 'D:\\ishchi\\ilovalar\\openserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\ishchi\\ilovalar\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x00030380'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00100298'
+    'ConEmuIsAdmin' => 'ADMIN'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '1924'
+    'ConEmuServerPID' => '2140'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\ishchi\\ilovalar\\openserver'
+    'ConEmuWorkDrive' => 'd:'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'd:\\ishchi\\ilovalar\\openserver'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\ishchi\\ilovalar\\openserver'
+    'LOCALAPPDATA' => 'C:\\Users\\ABoy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HOMEPC'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OPENSSL_CONF' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ishchi\\ilovalar\\openserver\\modules\\conemu\\ConEmu\\Scripts;D:\\ishchi\\ilovalar\\openserver\\modules\\conemu;D:\\ishchi\\ilovalar\\openserver\\modules\\conemu\\ConEmu;d:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\ext;d:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\pear;d:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\pear\\bin;d:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1;d:\\ishchi\\ilovalar\\openserver\\modules\\wget\\bin;d:\\ishchi\\ilovalar\\openserver\\modules\\database\\MySQL-5.7\\bin;d:\\ishchi\\ilovalar\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\ishchi\\ilovalar\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ABoy\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ABoy\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\php.exe'
+    'PHPDIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\'
+    'PHPRC' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1'
+    'PHP_BIN' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\php.exe'
+    'PHP_BINARY' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\php.exe'
+    'PHP_BINDIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\'
+    'PHP_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\'
+    'PHP_INI' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4501'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m#$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'd:\\ishchi\\ilovalar\\openserver\\userdata\\temp'
+    'TMP' => 'd:\\ishchi\\ilovalar\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'HomePC'
+    'USERNAME' => 'ABoy'
+    'USERPROFILE' => 'C:\\Users\\ABoy'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1628521102.319
+    'REQUEST_TIME' => 1628521102
+    'argv' => [
+        0 => '-'
+        1 => 'migrate/up'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]
+2021-08-09 17:58:22 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [14] unable to open database file in D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('sqlite:../../.....', '', '', NULL)
+#1 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare(true)
+#6 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\sqlite\Schema.php(134): yii\db\Command->queryAll()
+#8 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\sqlite\Schema.php(117): yii\db\sqlite\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Schema.php(146): yii\db\sqlite\Schema->loadTableSchema('migration')
+#10 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('up', Array)
+#17 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('up', Array)
+#18 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate/up', Array)
+#19 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate/up', Array)
+#20 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\yii.php(36): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [14] unable to open database file in D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare(true)
+#4 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\sqlite\Schema.php(134): yii\db\Command->queryAll()
+#6 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\sqlite\Schema.php(117): yii\db\sqlite\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\db\Schema.php(146): yii\db\sqlite\Schema->loadTableSchema('migration')
+#8 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('up', Array)
+#15 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('up', Array)
+#16 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate/up', Array)
+#17 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate/up', Array)
+#18 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 D:\ishchi\Ilovalar\OpenServer\domains\biblio.uz\yii.php(36): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2021-08-09 17:58:22 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '159x32766 (159x38)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ABoy\\AppData\\Roaming'
+    'asl_log' => 'Destination=file'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'HOMEPC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x0003037E'
+    'ConEmuBaseDir' => 'D:\\ishchi\\ilovalar\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'D:\\ishchi\\Ilovalar\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210422'
+    'ConEmuCfgDir' => 'D:\\ishchi\\ilovalar\\openserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\ishchi\\ilovalar\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x00030380'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00100298'
+    'ConEmuIsAdmin' => 'ADMIN'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '1924'
+    'ConEmuServerPID' => '2140'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\ishchi\\ilovalar\\openserver'
+    'ConEmuWorkDrive' => 'd:'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'd:\\ishchi\\ilovalar\\openserver'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\ishchi\\ilovalar\\openserver'
+    'LOCALAPPDATA' => 'C:\\Users\\ABoy\\AppData\\Local'
+    'LOGONSERVER' => '\\\\HOMEPC'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OPENSSL_CONF' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ishchi\\ilovalar\\openserver\\modules\\conemu\\ConEmu\\Scripts;D:\\ishchi\\ilovalar\\openserver\\modules\\conemu;D:\\ishchi\\ilovalar\\openserver\\modules\\conemu\\ConEmu;d:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\ext;d:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\pear;d:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\pear\\bin;d:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1;d:\\ishchi\\ilovalar\\openserver\\modules\\wget\\bin;d:\\ishchi\\ilovalar\\openserver\\modules\\database\\MySQL-5.7\\bin;d:\\ishchi\\ilovalar\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\ishchi\\ilovalar\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ABoy\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ABoy\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\php.exe'
+    'PHPDIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\'
+    'PHPRC' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1'
+    'PHP_BIN' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\php.exe'
+    'PHP_BINARY' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\php.exe'
+    'PHP_BINDIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\'
+    'PHP_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\'
+    'PHP_INI' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\ishchi\\ilovalar\\openserver\\modules\\php\\PHP_7.1\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4501'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m#$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'd:\\ishchi\\ilovalar\\openserver\\userdata\\temp'
+    'TMP' => 'd:\\ishchi\\ilovalar\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'HomePC'
+    'USERNAME' => 'ABoy'
+    'USERPROFILE' => 'C:\\Users\\ABoy'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'yii.php'
+    'SCRIPT_NAME' => 'yii.php'
+    'SCRIPT_FILENAME' => 'yii.php'
+    'PATH_TRANSLATED' => 'yii.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1628521102.319
+    'REQUEST_TIME' => 1628521102
+    'argv' => [
+        0 => '-'
+        1 => 'migrate/up'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]
