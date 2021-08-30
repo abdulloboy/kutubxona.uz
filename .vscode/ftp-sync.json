@@ -17,7 +17,8 @@
         "\\.vscode",
         "\\.git",
         "\\.DS_Store",
-        "\\vendor"
+        "\\vendor",
+        "\\fayl\\MO"
     ],
     "generatedFiles": {
         "extensionsToInclude": [
