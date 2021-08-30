@@ -1,0 +1,28 @@
+{
+    "remotePath": "./kutubxona.butun.uz/htdocs/",
+    "host": "ftp.hostfree.pw",
+    "username": "epree_29556220",
+    "password": "HoQwerty",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store",
+        "\\vendor"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}
