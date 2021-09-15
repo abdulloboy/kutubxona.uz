@@ -49,31 +49,8 @@ return [
                 'time' => 'php:U',
                 'datetime' => 'php:U', 
             ],
-    //        'displayTimezone' => '5',
-     //       'saveTimezone' => 'UTC',
-    //        'autoWidget' => true,
             'ajaxConversion' => false,
-   /*         'autoWidgetSettings' => [ 
-                'datetime' => [
-                    'type'=>2, 
-                    'pluginOptions'=>[
-                        'autoclose'=>true
-                    ],
-                ],
-            'time' => [],
-            'datetime' => [],
-            ],
-            'widgetSettings' => [ 
-                'datetime' => [
-                    'class' => 'yii\jui\DatePicker',
-                    'options' => [
-                        'dateFormat' => 'php:d-M-Y',
-                        'options' => [
-                            'class'=>'form-control'
-                        ], 
-                    ],
-                ],
-            ],*/
+   
         ],
     ],
 ];
